@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-
+app.config['HEROKU_ON'] = os.environ.get('HEROKU')
 
 # root
 @app.route("/")
