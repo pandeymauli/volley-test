@@ -37,7 +37,7 @@ def get_text_prediction():
     # if len(json['token']) == 0:
     #     return jsonify({'error': 'invalid input'})
 
-    return jsonify({'you sent this': json['text']})
+    return jsonify({'you sent this': json['data segment']})
 
 
 if __name__ == '__main__':
