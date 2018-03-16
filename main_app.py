@@ -34,7 +34,7 @@ def get_text_prediction():
     """
     json = request.get_json()
     print(json)
-    if len(json['text']) == 0:
+    if len(json['token']) == 0:
         return jsonify({'error': 'invalid input'})
 
     return jsonify({'you sent this': json['text']})
