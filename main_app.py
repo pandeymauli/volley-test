@@ -32,12 +32,13 @@ def get_text_prediction():
     predicts requested text whether it is ham or spam
     :return: json
     """
-    json = request.get_json()
-    print(json)
+    print("X")
+    #json = request.get_json()
+    print(request.data)
     # if len(json['token']) == 0:
     #     return jsonify({'error': 'invalid input'})
 
-    return jsonify({'you sent this': json['data segment']})
+    return "H"#jsonify({'you sent this': json['data segment']})
 
 
 if __name__ == '__main__':
